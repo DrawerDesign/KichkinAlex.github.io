@@ -1,24 +1,155 @@
 :root{
-    font-size: 62.5%; /*Базовый размер шрифта (rem.) - 16px * 0.625 = 10px (1rem)*/
-    margin: 0;
+    font-size: 62.5%; /* базовый размер шрифта в rem. 16px * 0,625 = 10px (1rem)*/
+}
+
+header{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header img{
+    background-color: white;
+    border: 2rem;
+    border-radius: 25%;
+    width: 5rem;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+header img:hover{
+    border: 2rem;
+    border-radius: 25%;
+    width: 5rem;
+    align-items: center;
+    padding: 1rem;
+
 }
 
 body{
-    font-size: 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: justify;
+    
+}
+
+footer{
+    background-color: black;
+}
+
+footer h3{
+    color: white;
+}
+
+.text-box{
+    text-align: center;
+}
+
+.text-box2{
+    display: grid;
+    justify-content: space-between;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    text-align: center;
+    padding-bottom: 2rem;
 }
 
 h1{
-    font-size: 18rem;
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
 }
 
 .row{
     display: flex;
-}
-
-.home-office{
-    background-color: rgb(155, 255, 255);
+    justify-content: space-between;
 }
 
 .house{
-    background-color: rgb(200, 140, 255);
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: grid;
+    place-items: center;
+    background-image: url(img/background1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.house img{
+    max-width: 20%;
+    height: auto;
+}
+
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container_f{
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+button{
+    font-weight: bold;
+    background-color: rgba(28,28,28,0);
+    border: none;
+    outline: solid;
+    font-size: 2rem;
+    padding: 2rem;
+    color: black;
+}
+
+button:hover{
+    color: tomato;
+}
+
+header button{
+    font-weight: bold;
+    background-color: rgba(28,28,28,0);
+    border: none;
+    outline: solid;
+    font-size: 2rem;
+    padding: 2rem;
+    color: white;
+}
+
+header button:hover{
+    color: tomato;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: tomato;
+}
+
+
+@media(max-width:1024px){
+    main .row{
+        flex-direction: column-reverse;
+    }
+
+    main .row_1{
+        flex-direction: column;
+    }
+    
+    main p{
+        display: none;
+    }
 }

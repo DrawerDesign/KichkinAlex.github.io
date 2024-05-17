@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -10,39 +10,121 @@
 
 <body>
     <header>
-        <a href="#">Главная</a>
-        <nav class="navigation">
-            <a href="#">Навыки</a>
-            <a href="#">Форма</a>
-            <a href="#">Карточки</a>
-        </nav>
-
+        <div class="container"> <!--Контейнер для ограничения по ширине-->
+            <div class="row"> <!--Флекс-контейнер-->
+                <a href="index.html">
+                    <img src="img/Icon.svg" alt="icon">
+                </a>
+                <nav class="navigation">
+                    <a href="#about-me">Обо мне</a>
+                    <a href="#skills">Навыки</a>
+                    <a href="#tech">Технологии</a>
+                </nav>
+            </div>
+            <div class="text-box">
+                <h1>Кичкин Александр Сергеевич</h1>
+                <h2>Веб-дизайнер</h2>
+                <div class="text-box2">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat
+                    </p>
+                </div>
+                <button>Написать мне</button>
+            </div>
+        </div>
     </header>
     <main>
         <section class="About">
             <div class="container">
-                <div class="row"> <!--Флекс Контейнер-->
-                    <div class="home-office"> <!--Блок текст-->
-                        <h1>Заголовок 1</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto distinctio inventore neque,
-                            sit sed magni quam magnam officiis error excepturi eos et quae, eum nihil libero fugiat in.
-                            Animi.
-                        </p>
-                        <button>Нажми меня</button>
-                        <div class="house"> <!--Блок картинка-->
-                            <img src="img/profile.webp" alt="house">
+                <div class="row"> <!--Флекс-контейнер-->
+                    <div class="home-office"> <!--Блок с текстом-->
+                        <h3 id="about-me">Обо мне</h3>
+                        <div class="house"> <!--Блок c картинкой-->
+                            <img src="img/person.png" alt="house">
+                            
                         </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, suscipit eveniet
+                            assumenda voluptates quos corrupti libero expedita beatae ut aliquam rem ducimus commodi,
+                            quam odio fuga? Harum earum quidem blanditiis est delectus sunt, aliquam voluptates quasi
+                            excepturi facere fuga tempore deleniti doloremque, repellat eligendi quia atque esse
+                            sapiente provident. Officia, delectus veniam? Voluptatum molestias aliquam expedita maxime
+                            iure debitis velit ipsam, adipisci maiores molestiae veniam sed corporis autem laudantium,
+                            magni et ut impedit error nobis. Dolorem suscipit doloribus dolorum saepe animi quasi
+                            excepturi molestiae optio eaque repudiandae cumque voluptas adipisci quas error commodi modi
+                            officia, facilis eum similique debitis non iste numquam quae! Ex esse quis eius
+                            exercitationem sint quidem porro necessitatibus laudantium corrupti inventore! Eius laborum
+                            distinctio quam ratione.
+                        </p>
+                        <button>Подробнее</button>
                     </div>
                 </div>
             </div>
         </section>
-
+        <section class="Skills">
+            <div class="container">
+                <div class="row"> <!--Флекс-контейнер-->
+                    <div class="home-office"> <!--Блок с текстом-->
+                        <h3 id="skills">Навыки</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, suscipit eveniet
+                            assumenda voluptates quos corrupti libero expedita beatae ut aliquam rem ducimus commodi,
+                            quam odio fuga? Harum earum quidem blanditiis est delectus sunt, aliquam voluptates quasi
+                            excepturi facere fuga tempore deleniti doloremque, repellat eligendi quia atque esse
+                            sapiente provident. Officia, delectus veniam? Voluptatum molestias aliquam expedita maxime
+                            iure debitis velit ipsam, adipisci maiores molestiae veniam sed corporis autem laudantium,
+                            magni et ut impedit error nobis. Dolorem suscipit doloribus dolorum saepe animi quasi
+                            excepturi molestiae optio eaque repudiandae cumque voluptas adipisci quas error commodi modi
+                            officia, facilis eum similique debitis non iste numquam quae! Ex esse quis eius
+                            exercitationem sint quidem porro necessitatibus laudantium corrupti inventore! Eius laborum
+                            distinctio quam ratione.
+                        </p>
+                        <button>Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Tech">
+            <div class="container">
+                <div class="row"> <!--Флекс-контейнер-->
+                    <div class="home-office"> <!--Блок с текстом-->
+                        <h3 id="tech">Технологии</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, suscipit eveniet
+                            assumenda voluptates quos corrupti libero expedita beatae ut aliquam rem ducimus commodi,
+                            quam odio fuga? Harum earum quidem blanditiis est delectus sunt, aliquam voluptates quasi
+                            excepturi facere fuga tempore deleniti doloremque, repellat eligendi quia atque esse
+                            sapiente provident. Officia, delectus veniam? Voluptatum molestias aliquam expedita maxime
+                            iure debitis velit ipsam, adipisci maiores molestiae veniam sed corporis autem laudantium,
+                            magni et ut impedit error nobis. Dolorem suscipit doloribus dolorum saepe animi quasi
+                            excepturi molestiae optio eaque repudiandae cumque voluptas adipisci quas error commodi modi
+                            officia, facilis eum similique debitis non iste numquam quae! Ex esse quis eius
+                            exercitationem sint quidem porro necessitatibus laudantium corrupti inventore! Eius laborum
+                            distinctio quam ratione.
+                        </p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <button>Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="container_f"> <!--Контейнер для ограничения по ширине-->
+            <div class="row"> <!--Флекс-контейнер-->
+                <h3>© Кичкин А. С.</h3>
+            </div>
+        </div>
     </footer>
-
 </body>
 
 </html>
